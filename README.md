@@ -27,16 +27,21 @@ var LABconfig = {
 }
 ```
 
-To load a JavaScript file, you use the defined path or shortcut variable from the config. To use a path, pass an array of path variables:
+* Use `paths` to declare where your JavaScript files should be loaded from. Can be any url, absolute or relative.
+* Use `shortcuts` to declare dependecies with an array of `paths`. Order of array elements determines the order of load. 
 
-```
+When you need to use a JavaScript file, you use the defined path or shortcut variable from the config. 
+
+To use a path, pass an array of path variables:
+
+```Javascript
 loadjs(['jquery'],function(){
 	//Both jquery and jquery.easing have finished loading
 })
 ```
 Or, pass a shorcut variable as a string:
 
-```
+```Javascript
 loadjs('jqueryWithEasing',function(){
 	//Both jquery and jquery.easing have finished loading
 })
