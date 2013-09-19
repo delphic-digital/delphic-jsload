@@ -5,8 +5,8 @@ On demand JavaScript loader that doesn't block.
 
 ## Features
 
-* [LABjs](http://labjs.com/) performance script loader
-* Custom wrapper and config object to make live easier
+* [LABjs](http://labjs.com/) performance script loader ( *the* best!).
+* Custom wrapper and config object to make life easier.
 
 
 ## How to use
