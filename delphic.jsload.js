@@ -1,6 +1,6 @@
 $LAB.setGlobalDefaults({AlwaysPreserveOrder:true});
 
-function loadjs(f,c){
+function jsload(f,c){
 	var queue = [];
 	
 	if (f instanceof Array) {
