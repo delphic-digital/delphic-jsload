@@ -35,14 +35,14 @@ When you need to use a JavaScript file, you use the defined path or shortcut var
 To use a path, pass an array of path variables:
 
 ```Javascript
-loadjs(['jquery', 'jquery.easing'],function(){
+jsload(['jquery', 'jquery.easing'],function(){
 	//Both jquery and jquery.easing have finished loading
 })
 ```
 Or, pass a shorcut variable as a string:
 
 ```Javascript
-loadjs('jqueryWithEasing',function(){
+jsload('jqueryWithEasing',function(){
 	//Both jquery and jquery.easing have finished loading
 })
 ```
