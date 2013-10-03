@@ -1,4 +1,4 @@
-dd-jsload
+delphic-jsload
 =============
 
 On demand JavaScript loader that doesn't block.
