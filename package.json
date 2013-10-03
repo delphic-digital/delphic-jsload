@@ -1,5 +1,5 @@
 {
     "volo": {
-        "ignore": [".gitignore", "LAB.min.js", "**/*.md"]
+        "ignore": []
     }
 }
