@@ -1,5 +1,8 @@
 {
     "volo": {
-        "ignore": [".gitignore", "LAB.min.js", "**/*.md"]
+        "ignore": [".gitignore", "LAB.min.js", "**/*.md"],
+        "dependencies": {
+            "LAB": "getify/LABjs#LAB.min.js",
+        }
     }
 }
