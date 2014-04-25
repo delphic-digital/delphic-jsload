@@ -1,3 +1,11 @@
+/* ===================================================
+ * Delphic.inject.js
+ * Delphic Digital
+ * ===================================================
+ * ========================================================== */
+
+
+
 ;(function (DELPHIC, $LAB) {
 
 $LAB.setGlobalDefaults({Debug:false, AlwaysPreserveOrder:true});
@@ -17,8 +25,10 @@ DELPHIC.inject = function(f,c){
 
 		var path = DELPHIC.LABconfig.paths[which] || which;
 		
-		//var type = path.split('.').pop();
-		var type = (path.indexOf('.js')!="-1") ? 'js' : 'css';
+		var type = path.split('.').pop();
+		//var type = (path.indexOf('.js')!="-1") ? 'js' : 'css';
+
+		if(!DEBUG){ path = path.replace(/(.*)\/(.*)(\.js|.css$)/i, '$1/$2.min$3?v=')+DELPHIC.ver};
 
 		switch(type) {
 			case 'js':
